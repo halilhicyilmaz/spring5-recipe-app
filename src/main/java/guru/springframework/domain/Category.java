@@ -1,6 +1,7 @@
 package guru.springframework.domain;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -9,7 +10,6 @@ import java.util.Set;
 @EqualsAndHashCode(exclude = {"recipes"})
 @Entity
 public class Category {
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
